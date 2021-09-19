@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { inject, injectable } from "tsyringe";
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
@@ -28,7 +29,6 @@ export class AuthenticateUserUseCase {
     }
 
     const passwordMatch = await compare(password, user.password);
-
     if (!passwordMatch) {
       throw new IncorrectEmailOrPasswordError();
     }

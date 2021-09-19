@@ -7,7 +7,7 @@ export class MockUsersRepository implements IUsersRepository {
   user: User = {
     id: "any_id",
     name: "any_name",
-    password: "any_password",
+    password: "$2a$12$Laj5FNl0iDSvDs41ZvQhEuwMg4O8it53.Cv9pmWVLJiYzooOK8pFS",
     email: "any_email",
     statement: [],
     created_at: new Date(),
