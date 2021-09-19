@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  database:
+    image: postgres
+    container_name: database_desafio_ignite_08
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=unit-tests
+      - POSTGRES_USER=guilherme
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - pgdata:/data/postgres
+
+volumes:
+  pgdata:
