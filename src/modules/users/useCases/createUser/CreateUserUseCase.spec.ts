@@ -1,7 +1,7 @@
 import { CreateUserUseCase } from "./CreateUserUseCase";
 import { MockUsersRepository } from "../../repositories/mocks/MockUsersRepository";
 import { IUsersRepository } from "../../repositories/IUsersRepository";
-import { CreateUserError } from "../createUser/CreateUserError";
+import { CreateUserError } from "./CreateUserError";
 
 type sutTypes = {
   sut: CreateUserUseCase;
