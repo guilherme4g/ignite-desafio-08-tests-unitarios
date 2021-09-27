@@ -56,7 +56,7 @@ export class accountsTable1616682561481 implements MigrationInterface {
           onDelete: 'CASCADE'
         },
         {
-          name: 'tranfers',
+          name: 'tranfer',
           columnNames: ['sender_id'],
           referencedTableName: 'users',
           referencedColumnNames: ['id'],
